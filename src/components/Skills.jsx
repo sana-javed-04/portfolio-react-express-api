@@ -14,7 +14,7 @@ export default function Skills() {
             try {
 
                 // Testing purpose only
-                await new Promise(resolve => setTimeout(resolve, 3000));
+                await new Promise(resolve => setTimeout(resolve, 2000));
 
                 const data = await getSkills();
 
