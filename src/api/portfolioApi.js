@@ -1,52 +1,59 @@
-// Localhost hata kar humne isay Express API ka route de diya hai
-const API = "/api/portfolio-data";
+// Vercel par relative path chal jata hai, isliye local domain ki zaroorat nahi hai
+const API_URL = "/api/portfolio-data";
 
-// Helper function taake baar baar error handling na likhni pare aur code clean rahe
-async function fetchData(key) {
-    const res = await fetch(API);
+// Sab se pehle aik helper function banayein jo poora data ek sath fetch karega
+async function fetchAllData() {
+    const res = await fetch(API_URL);
     if (!res.ok) {
-        throw new Error(`Failed to load ${key}`);
+        throw new Error("Failed to load portfolio data from backend");
     }
-    const data = await res.json();
-    return data[key] || (key === 'profile' || key === 'contact' || key === 'footer' ? {} : []);
+    return await res.json();
 }
 
 // ================= Profile =================
 export async function getProfile() {
-    return await fetchData('profile');
+    const data = await fetchAllData();
+    return data.profile || {};
 }
 
 // ================= Skills =================
 export async function getSkills() {
-    return await fetchData('skills');
+    const data = await fetchAllData();
+    return data.skills || [];
 }
 
 // ================= Projects =================
 export async function getProjects() {
-    return await fetchData('projects');
+    const data = await fetchAllData();
+    return data.projects || [];
 }
 
 // ================= Mini Projects =================
 export async function getMiniProjects() {
-    return await fetchData('miniProjects');
+    const data = await fetchAllData();
+    return data.miniProjects || [];
 }
 
 // ================= Blog =================
 export async function getBlogs() {
-    return await fetchData('blogs');
+    const data = await fetchAllData();
+    return data.blogs || [];
 }
 
 // ================= Testimonials =================
 export async function getTestimonials() {
-    return await fetchData('testimonials');
+    const data = await fetchAllData();
+    return data.testimonials || [];
 }
 
 // ================= Contact =================
 export async function getContact() {
-    return await fetchData('contact');
+    const data = await fetchAllData();
+    return data.contact || {};
 }
 
 // ================= Footer =================
 export async function getFooter() {
-    return await fetchData('footer');
+    const data = await fetchAllData();
+    return data.footer || {};
 }
