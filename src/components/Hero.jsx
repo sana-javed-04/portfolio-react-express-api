@@ -69,7 +69,11 @@ function Hero() {
 
                     <div className="profile-card">
 
-                        <h1>{"</>"}</h1>
+                        <img
+                            src="/images/hero.jpeg"
+                            alt="Sana Javed"
+                            className="profile-image"
+                        />
 
                     </div>
 
