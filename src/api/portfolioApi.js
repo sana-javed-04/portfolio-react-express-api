@@ -1,128 +1,52 @@
-const API = "http://localhost:3000";
+// Localhost hata kar humne isay Express API ka route de diya hai
+const API = "/api/portfolio-data";
+
+// Helper function taake baar baar error handling na likhni pare aur code clean rahe
+async function fetchData(key) {
+    const res = await fetch(API);
+    if (!res.ok) {
+        throw new Error(`Failed to load ${key}`);
+    }
+    const data = await res.json();
+    return data[key] || (key === 'profile' || key === 'contact' || key === 'footer' ? {} : []);
+}
 
 // ================= Profile =================
-
 export async function getProfile() {
-
-    const res = await fetch(`${API}/profile`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load profile");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('profile');
 }
 
 // ================= Skills =================
-
 export async function getSkills() {
-
-    const res = await fetch(`${API}/skills`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load skills");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('skills');
 }
 
 // ================= Projects =================
-
 export async function getProjects() {
-
-    const res = await fetch(`${API}/projects`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load projects");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('projects');
 }
 
 // ================= Mini Projects =================
-
 export async function getMiniProjects() {
-
-    const res = await fetch(`${API}/miniProjects`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load mini projects");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('miniProjects');
 }
 
 // ================= Blog =================
-
 export async function getBlogs() {
-
-    const res = await fetch(`${API}/blogs`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load blogs");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('blogs');
 }
 
 // ================= Testimonials =================
-
 export async function getTestimonials() {
-
-    const res = await fetch(`${API}/testimonials`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load testimonials");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('testimonials');
 }
 
 // ================= Contact =================
-
 export async function getContact() {
-
-    const res = await fetch(`${API}/contact`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load contact");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('contact');
 }
 
-
+// ================= Footer =================
 export async function getFooter() {
-
-    const res = await fetch(`${API}/footer`);
-
-    if (!res.ok) {
-
-        throw new Error("Failed to load footer");
-
-    }
-
-    return await res.json();
-
+    return await fetchData('footer');
 }
