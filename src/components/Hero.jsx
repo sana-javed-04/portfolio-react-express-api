@@ -1,3 +1,5 @@
+import { FiDownload } from "react-icons/fi";
+
 function Hero() {
     return (
         <section id="home" className="hero">
@@ -24,6 +26,16 @@ function Hero() {
 
                         <a href="#projects" className="btn primary-btn">
                             View Projects
+                        </a>
+
+                        <a
+                            href="/images/Sana-Javed-CV.pdf"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn secondary-btn"
+                        >
+                            <FiDownload />
+                            Download CV
                         </a>
 
                         <a href="#contact" className="btn secondary-btn">
