@@ -1,0 +1,289 @@
+{
+    "profile": {
+        "name": "Sana Javed",
+        "title": "Frontend Developer",
+        "location": "Punjab, Pakistan",
+        "email": "sanajaved0411@gmail.com",
+        "phone": "0300000000",
+        "about": "Frontend Developer passionate about building modern responsive websites with clean UI, smooth animations and professional user experience."
+    },
+    "skills": [
+        {
+            "id": 1,
+            "icon": "fa-brands fa-html5",
+            "title": "Frontend Development",
+            "desc": "HTML5, CSS3, JavaScript, Responsive UI Engineering",
+            "percent": 95,
+            "level": "Advanced"
+        },
+        {
+            "id": 2,
+            "icon": "fa-brands fa-wordpress",
+            "title": "WordPress Development",
+            "desc": "Custom websites, Elementor Pro, Business websites",
+            "percent": 90,
+            "level": "Advanced"
+        },
+        {
+            "id": 3,
+            "icon": "fa-solid fa-mobile-screen",
+            "title": "Responsive Design",
+            "desc": "Mobile-first UI, Flexible Layouts",
+            "percent": 92,
+            "level": "Advanced"
+        },
+        {
+            "id": 4,
+            "icon": "fa-solid fa-code-branch",
+            "title": "Version Control",
+            "desc": "Git & GitHub Workflow",
+            "percent": 75,
+            "level": "Intermediate"
+        },
+        {
+            "id": 5,
+            "icon": "fa-solid fa-cloud",
+            "title": "API Integration",
+            "desc": "REST API, JSON, Async JavaScript",
+            "percent": 80,
+            "level": "Intermediate"
+        },
+        {
+            "id": 6,
+            "icon": "fa-solid fa-chart-line",
+            "title": "SEO & Performance",
+            "desc": "Optimization, Accessibility & Speed",
+            "percent": 78,
+            "level": "Intermediate"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "category": "Web Development",
+            "technology": "JavaScript",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JavaScript"
+            ],
+            "cardImage": "images/autolux.png",
+            "modalImage": "images/Car Dealing.png",
+            "video": "/images/Car Dealing V.mp4",
+            "title": "AutoLux Car Dealership",
+            "description": "Premium responsive car dealership website featuring car listings, services, blog pages, and booking UI.",
+            "details": "AutoLux is a modern responsive car dealership website built using HTML, CSS and JavaScript. It includes car listings, booking UI, services, blog pages and contact section with smooth animations and mobile friendly layout.",
+            "github": "https://github.com/sana-javed-04/car-dealership-website",
+            "demo": "#"
+        },
+        {
+            "id": 2,
+            "category": "UI/UX Design",
+            "technology": "JavaScript",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "Responsive Design"
+            ],
+            "cardImage": "/images/interior.png",
+            "modalImage": "images/Interior UI.png",
+            "video": "/images/Interior UI V.mp4",
+            "title": "Luxury Interior Studio",
+            "description": "Elegant luxury interior design website with premium visual sections and modern UI interactions.",
+            "details": "Luxury Interior Studio is a premium UI project designed with elegant sections, smooth animations, pricing, portfolio showcase and modern responsive layouts for interior design agencies.",
+            "github": "https://github.com/sana-javed-04/luxury-interior-design-studio",
+            "demo": "#"
+        },
+        {
+            "id": 3,
+            "category": "Web Development",
+            "technology": "JavaScript",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "AOS"
+            ],
+            "cardImage": "/images/food.png",
+            "modalImage": "/images/Food Point.png",
+            "video": "/images/Food Point V.mp4",
+            "title": "Food Point Restaurant",
+            "description": "Restaurant website featuring menu showcase, testimonials, reservation form and animations.",
+            "details": "Food Point Restaurant is a responsive restaurant website featuring menu showcase, reservation form, customer testimonials, animations and interactive sections built with HTML, CSS and JavaScript.",
+            "github": "https://github.com/sana-javed-04/food-point-restaurant-website",
+            "demo": "#"
+        },
+        {
+            "id": 4,
+            "category": "Other",
+            "technology": "JavaScript",
+            "techStack": [
+                "HTML5",
+                "CSS3",
+                "JavaScript"
+            ],
+            "cardImage": "/images/heart.png",
+            "modalImage": "/images/Heart Charity.png",
+            "video": "/images/Heart Charity V.mp4",
+            "title": "Kind Heart Charity",
+            "description": "Responsive charity website clone featuring donation sections, volunteer information, campaign highlights, and modern UI design.",
+            "details": "Kind Heart Charity is a responsive non-profit website containing donation campaigns, volunteer registration, events, testimonials and modern responsive interface.",
+            "github": "https://github.com/sana-javed-04/kind-heart-charity-clone",
+            "demo": "#"
+        }
+    ],
+    "miniProjects": [
+        {
+            "id": 1,
+            "icon": "🎮",
+            "title": "Simon Game",
+            "shortDescription": "Memory based game using JavaScript logic and pattern recognition.",
+            "details": "A classic interactive Simon Says Game built using HTML, CSS and Vanilla JavaScript. The game generates a random sequence of colors that the player must remember and repeat correctly. Every successful level increases the difficulty. This project demonstrates DOM manipulation, event handling, game logic and animations.",
+            "images": [
+                "/images/simon1.png",
+                "/images/simon2.png",
+                "/images/simon3.png"
+            ],
+            "github": "https://github.com/sana-javed-04/Simon-Game"
+        },
+        {
+            "id": 2,
+            "icon": "🧮",
+            "title": "Calculator App",
+            "shortDescription": "Modern neomorphic calculator with smooth calculations.",
+            "details": "A modern calculator developed using HTML, CSS and JavaScript featuring a neomorphic user interface, instant calculations and responsive layout.",
+            "images": [
+                "/images/Calculator.png"
+            ],
+            "github": "https://github.com/sana-javed-04/neomorphic-math-calculator"
+        },
+        {
+            "id": 3,
+            "icon": "🧠",
+            "title": "Quiz App",
+            "shortDescription": "Dynamic quiz system with scoring and result generation.",
+            "details": "Interactive quiz application built with JavaScript. It calculates scores instantly, tracks answers dynamically and displays the final result after quiz completion.",
+            "images": [
+                "/images/Quiz 1.png",
+                "/images/Quiz 2.png",
+                "/images/Quiz 3.png"
+            ],
+            "github": "https://github.com/sana-javed-04/interactive-quiz-portal"
+        },
+        {
+            "id": 4,
+            "icon": "📝",
+            "title": "To-Do App",
+            "shortDescription": "Task manager with Local Storage support.",
+            "details": "A productivity application that allows users to create, edit and delete daily tasks. All data is stored using Local Storage for persistence.",
+            "images": [
+                "/images/Todo 1.png",
+                "/images/Todo 2.png"
+            ],
+            "github": "https://github.com/sana-javed-04/todo-list-app"
+        },
+        {
+            "id": 5,
+            "icon": "🎯",
+            "title": "Choice Game",
+            "shortDescription": "Funny interactive Yes / No game.",
+            "details": "Interactive JavaScript game featuring a moving 'No' button, confetti animation and dynamic DOM events for an entertaining user experience.",
+            "images": [
+                "/images/Yes No1.png"
+            ],
+            "video": "/images/Yes No.mp4",
+            "github": "https://github.com/sana-javed-04/interactive-choice-webapp"
+        },
+        {
+            "id": 6,
+            "icon": "🌦",
+            "title": "Weather App",
+            "shortDescription": "Real-time weather application using REST API.",
+            "details": "Weather dashboard built using JavaScript Fetch API. It retrieves real-time weather information, temperature, humidity and wind speed for cities worldwide.",
+            "images": [
+                "/images/Weather 1.png",
+                "/images/Weather 2.png",
+                "/images/Weather 3.png"
+            ],
+            "github": "https://github.com/sana-javed-04/weather-insights-app"
+        }
+    ],
+    "blogs": [
+        {
+            "id": 1,
+            "title": "Modern CSS Techniques",
+            "category": "CSS",
+            "date": "June 2026",
+            "cardImage": "/images/modern-css.jpg",
+            "modalImage": "/images/modern-css.jpg",
+            "shortDescription": "Using Flexbox, Grid and animations effectively.",
+            "details": "Modern CSS provides powerful tools like Flexbox, CSS Grid, Variables and Animations. These techniques help developers build responsive, maintainable and visually appealing interfaces with less code and better performance."
+        },
+        {
+            "id": 2,
+            "title": "Responsive Web Design",
+            "category": "Frontend",
+            "date": "June 2026",
+            "cardImage": "/images/responsive-design.jpg",
+            "modalImage": "/images/responsive-design.jpg",
+            "shortDescription": "Learn how responsive layouts improve user experience.",
+            "details": "Responsive Web Design ensures websites work perfectly on desktop, tablet and mobile devices by using flexible layouts, media queries and responsive images."
+        },
+        {
+            "id": 3,
+            "title": "JavaScript DOM Mastery",
+            "category": "JavaScript",
+            "date": "June 2026",
+            "cardImage": "/images/javascript-dom.jpg",
+            "modalImage": "/images/javascript-dom.jpg",
+            "shortDescription": "Understanding DOM manipulation and events.",
+            "details": "The Document Object Model allows JavaScript to update page content dynamically, respond to events and create rich user interactions. Mastering the DOM is an essential frontend development skill."
+        }
+    ],
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "John Smith",
+            "position": "Business Owner",
+            "image": "/images/client1.jpg",
+            "rating": 5,
+            "review": "Sana delivered an outstanding website with clean code, responsive design and excellent communication throughout the project."
+        },
+        {
+            "id": 2,
+            "name": "Emily Johnson",
+            "position": "Startup Founder",
+            "image": "/images/client2.jpg",
+            "rating": 5,
+            "review": "Highly professional frontend developer. The final product exceeded expectations and was delivered on time."
+        },
+        {
+            "id": 3,
+            "name": "Michael Brown",
+            "position": "UI Designer",
+            "image": "/images/client3.jpg",
+            "rating": 5,
+            "review": "Amazing attention to detail, modern UI implementation and smooth animations. Great experience working together."
+        }
+    ],
+    "contact": {
+        "heading": "Let's Work Together",
+        "title": "Get In Touch",
+        "description": "Have a project idea, freelance opportunity, or collaboration? Feel free to reach out.",
+        "email": "sanajaved0411@gmail.com",
+        "phone": "0300000000",
+        "location": "Punjab, Pakistan",
+        "social": {
+            "github": "https://github.com/sana-javed-04",
+            "linkedin": "https://www.linkedin.com/in/sana-javed-dev/",
+            "fiverr": "https://www.fiverr.com/users/sanajaved_dev/"
+        }
+    },
+    "footer": {
+        "copyright": "© 2026 Sana Javed. All Rights Reserved.",
+        "tagline": "Frontend Developer | React Developer | WordPress Developer",
+        "github": "https://github.com/sana-javed-04",
+        "linkedin": "https://www.linkedin.com/in/sana-javed-dev/",
+        "fiverr": "https://www.fiverr.com/users/sanajaved_dev/"
+    }
+}

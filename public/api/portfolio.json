@@ -1,0 +1,97 @@
+{
+    "profile": {
+        "name": "Sana Javed",
+        "title": "Frontend Developer",
+        "description": "Frontend Developer passionate about creating responsive websites using HTML, CSS, JavaScript and React.",
+        "location": "Punjab, Pakistan",
+        "email": "sanajaved0411@gmail.com",
+        "phone": "0300000000",
+        "github": "https://github.com/sana-javed-04",
+        "linkedin": "https://linkedin.com/in/sana-javed-dev",
+        "image": "/images/profile.png"
+    },
+    "skills": [
+        {
+            "name": "HTML",
+            "percentage": 95
+        },
+        {
+            "name": "CSS",
+            "percentage": 95
+        },
+        {
+            "name": "JavaScript",
+            "percentage": 90
+        },
+        {
+            "name": "React",
+            "percentage": 80
+        },
+        {
+            "name": "WordPress",
+            "percentage": 90
+        },
+        {
+            "name": "GitHub",
+            "percentage": 85
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "AutoLux Car Dealership",
+            "category": "Web Development",
+            "technology": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "/images/autolux.png",
+            "github": "https://github.com/sana-javed-04/car-dealership-website",
+            "demo": "",
+            "description": "Premium car dealership website."
+        },
+        {
+            "id": 2,
+            "name": "Luxury Interior",
+            "category": "UI/UX Design",
+            "technology": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "/images/interior.png",
+            "github": "https://github.com/sana-javed-04/luxury-interior-design-studio",
+            "demo": "",
+            "description": "Luxury interior design website."
+        },
+        {
+            "id": 3,
+            "name": "Food Point",
+            "category": "Web Development",
+            "technology": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "/images/food.png",
+            "github": "https://github.com/sana-javed-04/food-point-restaurant-website",
+            "demo": "",
+            "description": "Restaurant website."
+        },
+        {
+            "id": 4,
+            "name": "Kind Heart Charity Clone",
+            "category": "Web Development",
+            "technology": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "/images/heart.png",
+            "github": "https://github.com/sana-javed-04/kind-heart-charity-clone",
+            "demo": "",
+            "description": "Responsive charity website."
+        }
+    ]
+}
