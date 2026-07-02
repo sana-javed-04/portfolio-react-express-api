@@ -128,7 +128,8 @@ export default function Contact() {
 
             const response = await fetch(
 
-                "http://localhost:5000/api/contact",
+
+                "/api/contact",
 
                 {
 
