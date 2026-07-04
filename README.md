@@ -1,74 +1,144 @@
 # 🚀 Modern React Portfolio with Express.js REST API
 
-Welcome to my professional portfolio website! This is a modern, high-performance, and fully responsive web application built with a React.js frontend and a Node.js/Express.js REST API backend to handle dynamic project loading. 
+A modern, responsive, and production-ready portfolio website built using **React.js**, **Vite**, **Node.js**, and **Express.js**. The project showcases my skills, featured projects, mini projects, blogs, testimonials, and contact information through a clean user interface with backend API integration.
 
-This repository has been fully refactored, optimized, and documented to fulfill the **Week 5 Professional Deployment & Optimization** requirements.
+## 🌐 Live Demo
 
-🌐 **Live Production Link:** [https://sanajaved-phi.vercel.app/](https://sanajaved-phi.vercel.app/)
+**Website:** https://sanajaved-phi.vercel.app/
 
----
+## 📂 GitHub Repository
 
-## ✨ Features
-
-- **Dynamic API Integration:** Projects, skills, and assets are fetched dynamically via an Express.js REST API server.
-- **Search & Live Filtering:** Includes a real-time search engine and category filtering to navigate through individual items instantly.
-- **Responsive & Semantic Layout:** Built with a clean, fully mobile-first responsive grid structure.
-- **Interactive Contact Form:** A dedicated, reusable contact module engineered for quick user inquiries and feedback submissions.
-- **Production Optimizations:** Features clean asset bundling, structured asset management, and minimal initial loading delay.
+**Repository:** https://github.com/sana-javed-04/portfolio-react-express-api
 
 ---
 
-## 🛠️ Tech Stack
+# ✨ Features
 
-### Frontend:
-- **React.js & Vite:** High-speed development workspace utilizing modular hot modules and minimal build footprints.
-- **Tailwind CSS:** Modern utility-first workflow used for scalable, modern UI rendering.
-- **Font Awesome Icons:** Used across the platform to serve as visual anchors for interactive links.
-
-### Backend:
-- **Node.js & Express.js:** Fast and minimalist backend environment hosting clean, structured REST endpoints.
-- **JSON File Database (`db.json`):** Structured local database file serving clean endpoints to feed the frontend interface.
-
----
-
-## ⚙️ Local Installation Steps
-
-Follow these direct terminal commands to configure and launch this project locally on your machine:
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/sana-javed-04/portfolio-react-express-api.git
-   ```
-
-2. **Navigate into the Project Folder:**
-   ```bash
-   cd portfolio-react-express-api
-   ```
-
-3. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-
-4. **Boot Up the Local Development Environment:**
-   ```bash
-   npm run dev
-   ```
+* Dynamic portfolio powered by Express.js REST APIs
+* Responsive design for Mobile, Tablet, and Desktop
+* Featured Projects with Search functionality
+* Filter Projects by Category
+* Filter Projects by Technology
+* Mini Projects section
+* Dynamic Skills section
+* Blog section
+* Testimonials section
+* Contact Form with backend integration
+* Project Details Modal
+* Loading Skeletons
+* Error Handling
+* Empty State UI
+* Reusable React Components
+* Smooth scrolling and modern UI
+* SEO optimized
+* Lazy loading for images
+* Production deployment on Vercel
 
 ---
 
-## 📈 Week 5 Milestone Checklist Completed
+# 🛠 Technologies Used
 
-- **SEO & Social Previews:** Configured proper page headers, canonical tags, structured Open Graph meta fields for WhatsApp/Facebook, and standard Twitter Cards inside `index.html`.
-- **Accessibility Infrastructure:** Enforced semantic HTML tags (`<head>`, `<body>`), standard text headings hierarchy, and comprehensive image `alt` description fields.
-- **Refactoring & Modularity:** Cleaned duplicate boilerplate profiles, split layout scripts into atomic reusable components, and organized data routing paths.
-- **Production Deployment:** Verified the live Vercel cloud environment configuration leveraging a custom `vercel.json` production routing profile.
+### Frontend
+
+* React.js
+* Vite
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Icons
+* React Helmet Async
+* AOS (Animate On Scroll)
+
+### Backend
+
+* Node.js
+* Express.js
+* REST API
+* JSON Database (db.json)
+
+### Deployment
+
+* Vercel
+* GitHub
 
 ---
 
-## 🧑‍💻 Author
+# 📁 Project Structure
 
-- **Name:** Sana Javed
-- **Role:** Frontend & WordPress Developer
-- **GitHub Profile:** [https://github.com/sana-javed-04](https://github.com/sana-javed-04)
-- **Project Repository:** [https://github.com/portfolio-react-express-api](https://github.com/portfolio-react-express-api)
+```text
+portfolio-react-express-api
+│
+├── public
+├── src
+│   ├── components
+│   ├── api
+│   ├── assets
+│   └── styles
+│
+├── server
+│   ├── routes
+│   ├── controllers
+│   └── .env
+│
+├── db.json
+├── package.json
+└── README.md
+```
+
+---
+
+# ⚙ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sana-javed-04/portfolio-react-express-api.git
+```
+
+Navigate into the project:
+
+```bash
+cd portfolio-react-express-api
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+# 🚀 Week 5 Improvements
+
+* Deployed the portfolio on Vercel
+* Optimized project for production
+* Improved page loading performance
+* Implemented lazy loading for images
+* Added SEO meta tags
+* Added Open Graph tags
+* Added Twitter Card metadata
+* Added favicon
+* Used semantic HTML structure
+* Improved accessibility with proper alt text and labels
+* Organized reusable React components
+* Cleaned project structure
+* Optimized frontend and backend integration
+
+---
+
+# 👩‍💻 Author
+
+**Sana Javed**
+
+Frontend & WordPress Developer
+
+GitHub: https://github.com/sana-javed-04
+
+Portfolio: https://sanajaved-phi.vercel.app/
