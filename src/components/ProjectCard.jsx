@@ -12,6 +12,7 @@ export default function ProjectCard({
             <img
                 src={project.cardImage}
                 alt={project.title}
+                loading="lazy"
             />
 
             <div className="project-content">

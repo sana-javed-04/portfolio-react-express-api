@@ -65,6 +65,7 @@ export default function ProjectModal({
                 <img
                     src={project.modalImage}
                     alt={project.title}
+                    loading="lazy"
                 />
 
                 {
@@ -93,6 +94,7 @@ export default function ProjectModal({
                                 <source
                                     src={project.video}
                                     type="video/mp4"
+                                    loading="lazy"
                                 />
 
                             </video>

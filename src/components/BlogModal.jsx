@@ -30,6 +30,7 @@ export default function BlogModal({
                     src={blog.modalImage}
                     alt={blog.title}
                     className="blog-modal-image"
+                    loading="lazy"
                 />
 
                 <span className="blog-category">

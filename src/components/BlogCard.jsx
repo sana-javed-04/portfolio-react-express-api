@@ -12,6 +12,7 @@ export default function BlogCard({
             <img
                 src={blog.cardImage}
                 alt={blog.title}
+                loading="lazy"
             />
 
             <h3>

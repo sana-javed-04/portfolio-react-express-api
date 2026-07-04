@@ -44,6 +44,7 @@ export default function MiniProjectModal({
                                 key={index}
                                 src={image}
                                 alt={project.title}
+                                loading="lazy"
                             />
 
                         ))
@@ -70,6 +71,7 @@ export default function MiniProjectModal({
                             <source
                                 src={project.video}
                                 type="video/mp4"
+                                loading="lazy"
                             />
 
                             Your browser does not support video.
