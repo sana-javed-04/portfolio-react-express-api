@@ -59,7 +59,7 @@ function Navbar() {
     aria-label="Open Menu"
     onClick={() => setMenuOpen(!menuOpen)}
 >
-    ☰
+    {menuOpen ? "✕" : "☰"}
 </button>
 
             <nav className={menuOpen ? "navbar active" : "navbar"}>
