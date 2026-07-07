@@ -211,51 +211,51 @@
     "certificates": [
         {
             "id": 1,
-            "image": "/images/certificates/certificate-1.png"
+            "image": "/images/certificates/certificates-1.png"
         },
         {
             "id": 2,
-            "image": "/images/certificates/certificate-2.png"
+            "image": "/images/certificates/certificates-2.png"
         },
         {
             "id": 3,
-            "image": "/images/certificates/certificate-3.png"
+            "image": "/images/certificates/certificates-3.png"
         },
         {
             "id": 4,
-            "image": "/images/certificates/certificate-4.png"
+            "image": "/images/certificates/certificates-4.png"
         },
         {
             "id": 5,
-            "image": "/images/certificates/certificate-5.png"
+            "image": "/images/certificates/certificates-5.png"
         },
         {
             "id": 6,
-            "image": "/images/certificates/certificate-6.png"
+            "image": "/images/certificates/certificates-6.png"
         },
         {
             "id": 7,
-            "image": "/images/certificates/certificate-7.png"
+            "image": "/images/certificates/certificates-7.png"
         },
         {
             "id": 8,
-            "image": "/images/certificates/certificate-8.png"
+            "image": "/images/certificates/certificates-8.png"
         },
         {
             "id": 9,
-            "image": "/images/certificates/certificate-9.png"
+            "image": "/images/certificates/certificates-9.png"
         },
         {
             "id": 10,
-            "image": "/images/certificates/certificate-10.png"
+            "image": "/images/certificates/certificates-10.png"
         },
         {
             "id": 11,
-            "image": "/images/certificates/certificate-11.png"
+            "image": "/images/certificates/certificates-11.png"
         },
         {
             "id": 12,
-            "image": "/images/certificates/certificate-12.png"
+            "image": "/images/certificates/certificates-12.png"
         }
     ],
     "blogs": [
