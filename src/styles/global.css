@@ -971,6 +971,92 @@ textarea {
 }
 
 /* =====================================================
+   CERTIFICATES SECTION
+===================================================== */
+
+.certificate-slider {
+
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    padding: 10px 5px;
+
+    scroll-behavior: smooth;
+
+}
+
+.certificate-slider::-webkit-scrollbar {
+
+    height: 8px;
+
+}
+
+.certificate-slider::-webkit-scrollbar-thumb {
+
+    background: var(--gold);
+
+    border-radius: 20px;
+
+}
+
+.certificate-slider img {
+
+    width: 450px;
+
+    min-width: 450px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    border: 2px solid var(--border);
+
+    transition: .4s;
+
+}
+
+.certificate-slider img:hover {
+
+    transform: scale(1.03);
+
+    border-color: var(--gold);
+
+}
+
+.certificate-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .9);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+
+    padding: 30px;
+
+}
+
+.certificate-modal img {
+
+    max-width: 95%;
+
+    max-height: 95vh;
+
+    border-radius: 15px;
+
+}
+
+/* =====================================================
    BLOG SECTION
 ===================================================== */
 
@@ -2014,6 +2100,16 @@ textarea {
     .filter-select {
 
         width: 100%;
+
+    }
+
+    /* Certificate */
+
+    .certificate-slider img {
+
+        width: 320px;
+
+        min-width: 320px;
 
     }
 

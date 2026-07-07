@@ -34,6 +34,13 @@ export async function getMiniProjects() {
     return data.miniProjects || [];
 }
 
+// ================= Certificates =================
+export async function getCertificates() {
+    const data = await fetchAllData();
+    return data.certificates || [];
+
+}
+
 // ================= Blog =================
 export async function getBlogs() {
     const data = await fetchAllData();

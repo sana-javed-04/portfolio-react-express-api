@@ -6,6 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import MiniProjects from "./components/MiniProjects";
+import Certificates from "./components/Certificates";
 import Blog from "./components/Blog";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -71,6 +72,8 @@ function App() {
         <Projects />
 
         <MiniProjects />
+
+        <Certificates />
 
         <Blog />
 
