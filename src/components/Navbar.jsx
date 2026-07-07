@@ -4,7 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 function Navbar() {
 
     const [active, setActive] = useState("home");
-
+    const [menuOpen, setMenuOpen] = useState(false);
     useEffect(() => {
 
         const sections = document.querySelectorAll("section[id]");
@@ -55,18 +55,20 @@ function Navbar() {
                 <ThemeToggle />
 
                 <button
-                    className="menu-btn"
-                    aria-label="Open Menu"
-                >
-                    ☰
-                </button>
+    className="menu-btn"
+    aria-label="Open Menu"
+    onClick={() => setMenuOpen(!menuOpen)}
+>
+    ☰
+</button>
 
-                <nav className="navbar">
+            <nav className={menuOpen ? "navbar active" : "navbar"}>
 
                     <ul className="nav-links">
 
                         <li>
                             <a
+                                onClick={() => setMenuOpen(false)}
                                 href="#home"
                                 className={active === "home" ? "nav-link active" : "nav-link"}
                             >
@@ -76,6 +78,7 @@ function Navbar() {
 
                         <li>
                             <a
+                                onClick={() => setMenuOpen(false)}
                                 href="#about"
                                 className={active === "about" ? "nav-link active" : "nav-link"}
                             >
@@ -85,6 +88,7 @@ function Navbar() {
 
                         <li>
                             <a
+                                onClick={() => setMenuOpen(false)}
                                 href="#skills"
                                 className={active === "skills" ? "nav-link active" : "nav-link"}
                             >
@@ -94,6 +98,7 @@ function Navbar() {
 
                         <li>
                             <a
+                                onClick={() => setMenuOpen(false)}
                                 href="#projects"
                                 className={active === "projects" ? "nav-link active" : "nav-link"}
                             >
@@ -103,6 +108,7 @@ function Navbar() {
 
                         <li>
                             <a
+                                onClick={() => setMenuOpen(false)}
                                 href="#blog"
                                 className={active === "blog" ? "nav-link active" : "nav-link"}
                             >
@@ -112,6 +118,7 @@ function Navbar() {
 
                         <li>
                             <a
+                                onClick={() => setMenuOpen(false)}
                                 href="#contact"
                                 className={active === "contact" ? "nav-link active" : "nav-link"}
                             >
