@@ -67,13 +67,13 @@ function App() {
 
         <About />
 
+        <Certificates />
+
         <Skills />
 
         <Projects />
 
         <MiniProjects />
-
-        <Certificates />
 
         <Blog />
 
