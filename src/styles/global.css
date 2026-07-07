@@ -2064,6 +2064,7 @@ textarea {
         flex-direction: column;
         gap: 22px;
         padding-left: 30px;
+       align-items:flex-start;
     }
 
     /* Hero */
