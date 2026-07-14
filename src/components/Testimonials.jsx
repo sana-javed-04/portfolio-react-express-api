@@ -154,7 +154,7 @@ export default function Testimonials() {
 
                 </h2>
 
-                <div className="testimonial-slider">
+                <div className="testimonial-slider" data-aos="zoom-in">
 
                     {
 

@@ -60,7 +60,6 @@ export default function Certificates() {
         <section
             id="certificates"
             className="section"
-            data-aos="fade-up"
         >
 
             <div className="container">
@@ -71,7 +70,7 @@ export default function Certificates() {
 
                 </h2>
 
-                <div className="certificate-slider">
+                <div className="certificate-slider" data-aos="zoom-in">
 
                     {
 

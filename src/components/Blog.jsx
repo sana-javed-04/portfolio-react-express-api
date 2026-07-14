@@ -110,7 +110,6 @@ export default function Blog() {
             <section
                 id="blog"
                 className="section blog-section"
-                data-aos="fade-up"
             >
 
                 <div className="container">
