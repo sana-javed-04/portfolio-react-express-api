@@ -250,7 +250,7 @@ export default function Contact() {
                 <div className="contact-grid">
 
                     <div className="contact-info"
-                        data-aos="fade-left">
+                        data-aos="fade-right">
 
                         <h3>
 
@@ -340,7 +340,7 @@ export default function Contact() {
                     <form
                         className="contact-form"
                         onSubmit={handleSubmit}
-                        data-aos="fade-right"
+                        data-aos="fade-left"
                     >
                         <input
                             type="text"
