@@ -134,7 +134,7 @@ export default function Blog() {
                                     blog={blog}
 
                                     onOpen={setSelectedBlog}
-                                    data-aos="flip-left"
+
 
                                 />
 

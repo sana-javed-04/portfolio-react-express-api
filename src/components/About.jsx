@@ -8,7 +8,7 @@ function About() {
 
                 <div className="about-grid">
 
-                    <div className="about-left">
+                    <div className="about-left" data-aos="fade-left">
 
                         <h3>Passionate Developer with Creative Vision</h3>
 
@@ -33,7 +33,7 @@ function About() {
 
                     </div>
 
-                    <div className="about-card">
+                    <div className="about-card" data-aos="fade-right">
 
                         <div className="info-row">
                             <span>Name</span>
