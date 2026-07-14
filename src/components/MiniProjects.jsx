@@ -114,7 +114,7 @@ export default function MiniProjects() {
 
         <>
 
-            <section className="mini-projects section">
+            <section className="mini-projects section" data-aos="fade-up">
 
                 <div className="container">
 
@@ -179,6 +179,7 @@ export default function MiniProjects() {
                                                 project={project}
 
                                                 onOpen={setSelectedProject}
+                                                data-aos="zoom-in"
 
                                             />
 

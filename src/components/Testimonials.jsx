@@ -144,7 +144,7 @@ export default function Testimonials() {
 
     return (
 
-        <section className="section testimonials">
+        <section className="section testimonials" data-aos="fade-up">
 
             <div className="container">
 

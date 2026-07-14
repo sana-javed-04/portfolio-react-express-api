@@ -6,7 +6,7 @@ function Hero() {
 
             <div className="container hero-grid">
 
-                <div className="hero-left">
+                <div className="hero-left" data-aos="fade-right">
 
                     <p className="hero-badge">
                         Frontend Developer • WordPress Expert
@@ -22,9 +22,10 @@ function Hero() {
                         beautiful UI and smooth user experiences.
                     </p>
 
-                    <div className="hero-buttons">
+                    <div className="hero-buttons" data-aos="fade-up"
+                        data-aos-delay="350">
 
-                        <a href="#projects" className="btn primary-btn">
+                        <a href="#projects" className="btn primary-btn" >
                             View Projects
                         </a>
 
@@ -44,7 +45,8 @@ function Hero() {
 
                     </div>
 
-                    <div className="hero-stats">
+                    <div className="hero-stats" data-aos="fade-up"
+                        data-aos-delay="500">
 
                         <div className="stat-box">
                             <h3>15+</h3>
@@ -65,7 +67,8 @@ function Hero() {
 
                 </div>
 
-                <div className="hero-right">
+                <div className="hero-right" data-aos="fade-left"
+                    data-aos-delay="200">
 
                     <div className="profile-card">
 

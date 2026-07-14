@@ -38,7 +38,7 @@ export default function Skills() {
 
     if (loading) {
         return (
-            <section className="section skills-section">
+            <section className="section skills-section" >
                 <div className="loading-container">
 
                     <div className="spinner"></div>
@@ -68,7 +68,7 @@ export default function Skills() {
 
         <section
             id="skills"
-            className="section skills-section"
+            className="section skills-section" data-aos="fade-up"
         >
 
             <div className="container">
@@ -86,7 +86,7 @@ export default function Skills() {
                         skills.map(skill => (
 
                             <div
-                                className="skill-card"
+                                className="skill-card" data-aos="zoom-in"
                                 key={skill.id}
                             >
 

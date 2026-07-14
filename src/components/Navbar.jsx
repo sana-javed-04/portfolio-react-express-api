@@ -55,15 +55,13 @@ function Navbar() {
                 <ThemeToggle />
 
                 <button
-    className="menu-btn"
-    aria-label="Open Menu"
-    onClick={() => setMenuOpen(!menuOpen)}
->
-    {menuOpen ? "✕" : "☰"}
-</button>
-
-            <nav className={menuOpen ? "navbar active" : "navbar"}>
-
+                    className="menu-btn"
+                    aria-label="Open Menu"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    {menuOpen ? "✕" : "☰"}
+                </button>
+                <nav className={menuOpen ? "navbar active" : "navbar"}>
                     <ul className="nav-links">
 
                         <li>

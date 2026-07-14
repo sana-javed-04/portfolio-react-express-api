@@ -172,7 +172,7 @@ export default function Projects() {
 
         <section
             id="projects"
-            className="section"
+            className="section" data-aos="fade-up"
         >
 
             <div className="container">
@@ -257,6 +257,7 @@ export default function Projects() {
                                             project={project}
 
                                             onOpen={setSelectedProject}
+                                            data-aos="zoom-in"
 
                                         />
 

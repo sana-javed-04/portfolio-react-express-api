@@ -1,7 +1,9 @@
 export default function MiniProjectCard({
 
     project,
-    onOpen
+    onOpen,
+
+    ...props
 
 }) {
 
@@ -9,6 +11,7 @@ export default function MiniProjectCard({
 
         <div
             className="mini-card"
+            {...props}
             onClick={() => onOpen(project)}
         >
 

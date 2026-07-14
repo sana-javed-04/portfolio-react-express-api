@@ -110,6 +110,7 @@ export default function Blog() {
             <section
                 id="blog"
                 className="section blog-section"
+                data-aos="fade-up"
             >
 
                 <div className="container">
@@ -133,6 +134,7 @@ export default function Blog() {
                                     blog={blog}
 
                                     onOpen={setSelectedBlog}
+                                    data-aos="flip-left"
 
                                 />
 

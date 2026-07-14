@@ -60,6 +60,7 @@ export default function Certificates() {
         <section
             id="certificates"
             className="section"
+            data-aos="fade-up"
         >
 
             <div className="container">

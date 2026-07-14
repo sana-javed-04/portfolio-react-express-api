@@ -1,14 +1,15 @@
 export default function ProjectCard({
 
     project,
-    onOpen
+    onOpen,
+    ...props
 
 }) {
 
     return (
 
         <div className="project-card">
-
+            {...props}
             <img
                 src={project.cardImage}
                 alt={project.title}

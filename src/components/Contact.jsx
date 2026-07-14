@@ -236,6 +236,7 @@ export default function Contact() {
         <section
             id="contact"
             className="section contact-section"
+            data-aos="fade-up"
         >
 
             <div className="container">
@@ -248,7 +249,8 @@ export default function Contact() {
 
                 <div className="contact-grid">
 
-                    <div className="contact-info">
+                    <div className="contact-info"
+                        data-aos="fade-left">
 
                         <h3>
 
@@ -338,6 +340,7 @@ export default function Contact() {
                     <form
                         className="contact-form"
                         onSubmit={handleSubmit}
+                        data-aos="fade-right"
                     >
                         <input
                             type="text"
