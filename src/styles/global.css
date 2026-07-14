@@ -279,7 +279,7 @@ textarea {
 
     box-shadow: 0 10px 35px rgba(0, 0, 0, .18);
 
-    background: rgba(20, 20, 20, .9);
+    background: var(--section);
 
     backdrop-filter: blur(18px);
 
