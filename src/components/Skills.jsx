@@ -40,6 +40,8 @@ export default function Skills() {
 
     useEffect(() => {
 
+        if (loading) return;
+
         const observer = new IntersectionObserver(
 
             ([entry]) => {
@@ -47,6 +49,8 @@ export default function Skills() {
                 if (entry.isIntersecting) {
 
                     setAnimate(true);
+
+                    observer.disconnect();
 
                 }
 
@@ -68,7 +72,7 @@ export default function Skills() {
 
         return () => observer.disconnect();
 
-    }, []);
+    }, [loading]);
 
     if (loading) {
         return (
