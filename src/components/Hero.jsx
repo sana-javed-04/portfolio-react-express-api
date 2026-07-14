@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
 
 function Hero() {
