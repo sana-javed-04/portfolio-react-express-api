@@ -7,7 +7,7 @@ export default function BlogCard({
 
     return (
 
-        <div className="blog-card">
+        <div className="blog-card" >
 
             <img
                 src={blog.cardImage}
