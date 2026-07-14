@@ -1487,15 +1487,20 @@ textarea {
 
 .project-modal {
 
+    position: fixed;
+    inset: 0;
+
     display: flex;
-
     justify-content: center;
-
     align-items: flex-start;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, .8);
 
     overflow-y: auto;
 
-    padding: 30px 20px;
+    z-index: 9999;
 
 }
 
@@ -1509,8 +1514,11 @@ textarea {
     position: relative;
 
     width: 100%;
+    max-width: 750px;
+    max-height: 90vh;
     max-height: 90vh;
     padding: 30px;
+    margin: 0;
     background: var(--section);
     border-radius: 20px;
     overflow-y: auto;

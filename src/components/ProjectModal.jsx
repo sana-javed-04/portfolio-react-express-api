@@ -67,7 +67,7 @@ export default function ProjectModal({
                     alt={project.title}
                 />
 
-                {
+                {/* {
 
                     project.video && (
 
@@ -101,7 +101,7 @@ export default function ProjectModal({
 
                     )
 
-                }
+                } */}
 
                 <h3
                     style={{
