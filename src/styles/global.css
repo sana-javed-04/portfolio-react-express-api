@@ -1167,7 +1167,7 @@ textarea {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 18px;
-    transition: .3s;
+    transition: .35s ease;
 }
 
 /* Active Cards */
@@ -1178,7 +1178,7 @@ textarea {
 
 .testimonial-card:hover {
     border-color: var(--gold);
-    transform: translateY(-6px);
+    transform: translateY(-8px);
 }
 
 /* Client Image */
@@ -1334,11 +1334,17 @@ textarea {
 
 .error {
     display: block;
-    margin-top: -8px;
+
+    color: #ff6b6b;
+
+    font-size: .85rem;
+
+    margin-top: 6px;
+
     margin-bottom: 12px;
 
-    color: #ef4444;
-    font-size: 14px;
+    font-weight: 500;
+
 }
 
 /* =====================================================
@@ -1409,13 +1415,33 @@ textarea {
 /* Button */
 
 .success-box button {
-    padding: 10px 20px;
-    background: var(--gold);
-    color: #111;
+
+    margin-top: 20px;
+
+    padding: 12px 30px;
+
     border: none;
+
     border-radius: 8px;
+
+    background: var(--gold);
+
+    color: #111;
+
     font-weight: 600;
+
     cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.success-box button:hover {
+
+    transform: translateY(-3px);
+
+    opacity: .9;
+
 }
 
 /* =====================================================

@@ -85,9 +85,9 @@ export default function Contact() {
 
         }
 
-        else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
 
-            newErrors.email = "Enter a valid email";
+            newErrors.email = "Enter a valid email address";
 
         }
 
@@ -100,6 +100,12 @@ export default function Contact() {
         if (!formData.message.trim()) {
 
             newErrors.message = "Message is required";
+
+        }
+
+        else if (formData.message.trim().length < 15) {
+
+            newErrors.message = "Message should be at least 15 characters";
 
         }
 
