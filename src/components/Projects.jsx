@@ -172,7 +172,7 @@ export default function Projects() {
 
         <section
             id="projects"
-            className="section" data-aos="fade-up"
+            className="section"
         >
 
             <div className="container">
