@@ -144,7 +144,7 @@ export default function Testimonials() {
 
     return (
 
-        <section className="section testimonials" data-aos="fade-up">
+        <section className="section testimonials" >
 
             <div className="container">
 
@@ -154,7 +154,7 @@ export default function Testimonials() {
 
                 </h2>
 
-                <div className="testimonial-slider" data-aos="zoom-in">
+                <div className="testimonial-slider" >
 
                     {
 

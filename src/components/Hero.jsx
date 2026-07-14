@@ -1,6 +1,54 @@
 import { FiDownload } from "react-icons/fi";
 
 function Hero() {
+
+    const [stats, setStats] = useState({
+
+        repos: 0,
+
+        ui: 0
+
+    });
+
+    useEffect(() => {
+
+        async function loadGithub() {
+
+            try {
+
+                const res = await fetch(
+
+                    "https://api.github.com/users/sana-javed-04/repos"
+
+                );
+
+                const data = await res.json();
+
+                setStats({
+
+                    repos: data.length,
+
+                    ui: data.filter(repo =>
+
+                        repo.name.toLowerCase().includes("ui")
+
+                    ).length
+
+                });
+
+            }
+
+            catch (err) {
+
+                console.log(err);
+
+            }
+
+        }
+
+        loadGithub();
+
+    }, []);
     return (
         <section id="home" className="hero">
 
@@ -49,7 +97,7 @@ function Hero() {
                         data-aos-delay="500">
 
                         <div className="stat-box">
-                            <h3>15+</h3>
+                            <h3>{stats.repos}+</h3>
                             <p>Projects</p>
                         </div>
 

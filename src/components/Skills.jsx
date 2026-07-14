@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getSkills } from "../api/portfolioApi";
 
 export default function Skills() {
 
     const [skills, setSkills] = useState([]);
     const [loading, setLoading] = useState(true);
+    const skillsRef = useRef(null);
+    const [animate, setAnimate] = useState(false);
     const [error, setError] = useState("");
 
     useEffect(() => {
@@ -33,6 +35,38 @@ export default function Skills() {
         }
 
         loadSkills();
+
+    }, []);
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver(
+
+            ([entry]) => {
+
+                if (entry.isIntersecting) {
+
+                    setAnimate(true);
+
+                }
+
+            },
+
+            {
+
+                threshold: 0.3
+
+            }
+
+        );
+
+        if (skillsRef.current) {
+
+            observer.observe(skillsRef.current);
+
+        }
+
+        return () => observer.disconnect();
 
     }, []);
 
@@ -79,7 +113,7 @@ export default function Skills() {
 
                 </h2>
 
-                <div className="skills-grid">
+                <div className="skills-grid" ref={skillsRef}>
 
                     {
 
@@ -117,11 +151,19 @@ export default function Skills() {
                                     <div className="progress-bar">
 
                                         <div
+
                                             className="progress-fill"
+
                                             style={{
-                                                width:
-                                                    `${skill.percent}%`
+
+                                                width: animate
+
+                                                    ? `${skill.percent}%`
+
+                                                    : "0%"
+
                                             }}
+
                                         ></div>
 
                                     </div>

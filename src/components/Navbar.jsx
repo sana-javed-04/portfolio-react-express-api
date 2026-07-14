@@ -5,6 +5,7 @@ function Navbar() {
 
     const [active, setActive] = useState("home");
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     useEffect(() => {
 
         const sections = document.querySelectorAll("section[id]");
@@ -41,10 +42,61 @@ function Navbar() {
         };
 
     }, []);
+    useEffect(() => {
+
+        function handleClick(e) {
+
+            if (
+
+                !e.target.closest(".navbar")
+
+                &&
+
+                !e.target.closest(".menu-btn")
+
+            ) {
+
+                setMenuOpen(false);
+
+            }
+
+        }
+
+        document.addEventListener("click", handleClick);
+
+        return () =>
+
+            document.removeEventListener("click", handleClick);
+
+    }, []);
+
+    useEffect(() => {
+
+        function handleNavbar() {
+
+            setScrolled(window.scrollY > 30);
+
+        }
+
+        window.addEventListener("scroll", handleNavbar);
+
+        return () =>
+
+            window.removeEventListener("scroll", handleNavbar);
+
+    }, []);
 
     return (
 
-        <header className="header">
+        <header
+            className={
+                scrolled
+                    ?
+                    "header scrolled"
+                    :
+                    "header"
+            }
+        >
 
             <div className="container nav-wrapper">
 
@@ -57,6 +109,7 @@ function Navbar() {
                 <button
                     className="menu-btn"
                     aria-label="Open Menu"
+                    aria-expanded={menuOpen}
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
                     {menuOpen ? "✕" : "☰"}
