@@ -257,7 +257,7 @@ export default function Projects() {
                                             project={project}
 
                                             onOpen={setSelectedProject}
-                                            data-aos="zoom-in"
+
 
                                         />
 

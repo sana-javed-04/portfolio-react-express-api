@@ -1,17 +1,14 @@
 export default function MiniProjectCard({
 
     project,
-    onOpen,
-
-    ...props
-
+    onOpen
 }) {
 
     return (
 
         <div
             className="mini-card"
-            {...props}
+            data-aos="zoom-in"
             onClick={() => onOpen(project)}
         >
 

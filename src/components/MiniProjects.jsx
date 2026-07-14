@@ -179,7 +179,7 @@ export default function MiniProjects() {
                                                 project={project}
 
                                                 onOpen={setSelectedProject}
-                                                data-aos="zoom-in"
+
 
                                             />
 
