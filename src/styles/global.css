@@ -65,6 +65,8 @@ body.light-mode {
 html {
 
     scroll-behavior: smooth;
+        overflow-x: hidden;
+
 
 }
 
@@ -77,6 +79,7 @@ body {
     color: var(--white);
 
     line-height: 1.6;
+    overflow-x: hidden;
 
 }
 
@@ -224,6 +227,7 @@ textarea {
     height: 42px;
 
     display: flex;
+    flex-shrink:0;
 
     justify-content: center;
 
@@ -263,6 +267,7 @@ textarea {
     left: 0;
 
     width: 100%;
+    overflow: hidden;
 
     z-index: 999;
 
@@ -293,8 +298,8 @@ textarea {
 
     align-items: center;
 
-    padding: 20px 24px;
-
+  gap:16px;
+    padding:18px 24px;
 }
 
 .logo {
@@ -304,6 +309,8 @@ textarea {
     font-weight: 800;
 
     color: var(--white);
+    flex:1;
+    min-width:0;
 
 }
 
@@ -342,17 +349,23 @@ textarea {
 
 .menu-btn {
 
-    display: none;
+   display:none;
+    width:42px;
+    height:42px;
 
-    border: none;
+    flex-shrink:0;
 
-    background: transparent;
+    align-items:center;
+    justify-content:center;
 
-    color: var(--white);
+    border:none;
+    background:transparent;
 
-    font-size: 1.5rem;
+    color:var(--white);
 
-    cursor: pointer;
+    font-size:1.6rem;
+
+    cursor:pointer;
 
 }
 
@@ -730,18 +743,10 @@ textarea {
 
 /* Skill Icon */
 
-.skill-icon {
-
-    font-size: 2.5rem;
-
+.skill-card {
+   font-size: 2.5rem;
+   display: flex;
     color: var(--gold);
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
 }
 
 /* Skill Title */
@@ -2106,28 +2111,47 @@ textarea {
 
     /* Navbar */
 
-    .menu-btn {
-        display: block;
+    .nav-wrapper{
+        padding:16px;
+        gap:10px;
     }
 
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: -100%;
-
-        width: 260px;
-        height: 100vh;
-
-        background: var(--section);
-
-        padding-top: 90px;
-
-        transition: .35s;
-        z-index: 1000;
+    .logo{
+        font-size:1.45rem;
     }
 
-    .navbar.active {
-        left: 0;
+    .menu-btn{
+        display:flex;
+    }
+
+    .navbar{
+
+        position:fixed;
+
+        top:0;
+
+        left:-100%;
+
+        width:260px;
+
+        max-width:80%;
+
+        height:100vh;
+
+        padding-top:90px;
+
+        background:var(--section);
+
+        transition:left .35s ease;
+
+        z-index:1000;
+
+    }
+
+    .navbar.active{
+
+        left:0;
+
     }
 
     .nav-links {
