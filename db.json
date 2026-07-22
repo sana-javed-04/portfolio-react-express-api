@@ -10,7 +10,7 @@
     "skills": [
         {
             "id": 1,
-            "icon": "fa-brands fa-html5",
+            "icon": "html5",
             "title": "Frontend Development",
             "desc": "HTML5, CSS3, JavaScript, Responsive UI Engineering",
             "percent": 95,
@@ -18,7 +18,7 @@
         },
         {
             "id": 2,
-            "icon": "fa-brands fa-wordpress",
+            "icon": "wordpress",
             "title": "WordPress Development",
             "desc": "Custom websites, Elementor Pro, Business websites",
             "percent": 90,
@@ -26,7 +26,7 @@
         },
         {
             "id": 3,
-            "icon": "fa-solid fa-mobile-screen",
+            "icon": "mobile",
             "title": "Responsive Design",
             "desc": "Mobile-first UI, Flexible Layouts",
             "percent": 92,
@@ -34,7 +34,7 @@
         },
         {
             "id": 4,
-            "icon": "fa-solid fa-code-branch",
+            "icon": "git",
             "title": "Version Control",
             "desc": "Git & GitHub Workflow",
             "percent": 75,
@@ -42,7 +42,7 @@
         },
         {
             "id": 5,
-            "icon": "fa-solid fa-cloud",
+            "icon": "cloud",
             "title": "API Integration",
             "desc": "REST API, JSON, Async JavaScript",
             "percent": 80,
@@ -50,7 +50,7 @@
         },
         {
             "id": 6,
-            "icon": "fa-solid fa-chart-line",
+            "icon": "seo",
             "title": "SEO & Performance",
             "desc": "Optimization, Accessibility & Speed",
             "percent": 78,

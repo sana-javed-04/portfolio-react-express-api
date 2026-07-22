@@ -1,12 +1,20 @@
-import { useEffect, useRef, useState } from "react";
+import {
+    FaHtml5,
+    FaWordpress,
+    FaMobileAlt,
+    FaCodeBranch,
+    FaCloud,
+    FaChartLine
+} from "react-icons/fa";
+
+import { useEffect, useState } from "react";
 import { getSkills } from "../api/portfolioApi";
 
 export default function Skills() {
 
     const [skills, setSkills] = useState([]);
     const [loading, setLoading] = useState(true);
-    const skillsRef = useRef(null);
-    const [animate, setAnimate] = useState(false);
+    const [animatedCards, setAnimatedCards] = useState([]);
     const [error, setError] = useState("");
 
     useEffect(() => {
@@ -38,41 +46,7 @@ export default function Skills() {
 
     }, []);
 
-    useEffect(() => {
 
-        if (loading) return;
-
-        const observer = new IntersectionObserver(
-
-            ([entry]) => {
-
-                if (entry.isIntersecting) {
-
-                    setAnimate(true);
-
-                    observer.disconnect();
-
-                }
-
-            },
-
-            {
-
-                threshold: 0.3
-
-            }
-
-        );
-
-        if (skillsRef.current) {
-
-            observer.observe(skillsRef.current);
-
-        }
-
-        return () => observer.disconnect();
-
-    }, [loading]);
 
     if (loading) {
         return (
@@ -102,6 +76,15 @@ export default function Skills() {
         );
     }
 
+    const icons = {
+        html5: <FaHtml5 />,
+        wordpress: <FaWordpress />,
+        mobile: <FaMobileAlt />,
+        git: <FaCodeBranch />,
+        cloud: <FaCloud />,
+        seo: <FaChartLine />
+    };
+
     return (
 
         <section
@@ -117,18 +100,60 @@ export default function Skills() {
 
                 </h2>
 
-                <div className="skills-grid" ref={skillsRef}>
+                <div className="skills-grid">
 
                     {
 
                         skills.map(skill => (
 
                             <div
-                                className="skill-card" data-aos="zoom-in"
+                                className="skill-card"
+                                data-aos="zoom-in"
                                 key={skill.id}
+                                ref={(el) => {
+
+                                    if (!el) return;
+
+                                    const observer = new IntersectionObserver(
+
+                                        ([entry]) => {
+
+                                            if (entry.isIntersecting) {
+
+                                                setAnimatedCards((prev) =>
+
+                                                    prev.includes(skill.id)
+
+                                                        ? prev
+
+                                                        : [...prev, skill.id]
+
+                                                );
+
+                                                observer.disconnect();
+
+                                            }
+
+                                        },
+
+                                        {
+
+                                            threshold: 0.5
+
+                                        }
+
+                                    );
+
+                                    observer.observe(el);
+
+                                }}
                             >
 
-                                <i className={skill.icon}></i>
+                                <div className="skill-icon">
+
+                                    {icons[skill.icon]}
+
+                                </div>
 
                                 <h3>{skill.title}</h3>
 
@@ -160,10 +185,8 @@ export default function Skills() {
 
                                             style={{
 
-                                                width: animate
-
+                                                width: animatedCards.includes(skill.id)
                                                     ? `${skill.percent}%`
-
                                                     : "0%"
 
                                             }}

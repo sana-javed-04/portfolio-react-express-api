@@ -730,9 +730,18 @@ textarea {
 
 /* Skill Icon */
 
-.skill-card i {
+.skill-icon {
+
+    font-size: 2.5rem;
+
     color: var(--gold);
-    font-size: 2.4rem;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
 }
 
 /* Skill Title */
