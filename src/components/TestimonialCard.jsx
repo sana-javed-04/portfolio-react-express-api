@@ -15,6 +15,9 @@ export default function TestimonialCard({
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="testimonial-img"
+                width="500"
+
+                height="350"
                 loading="lazy"
             />
 

@@ -1,3 +1,7 @@
+import {
+    FaArrowUp
+} from "react-icons/fa";
+
 import { useEffect, useState } from "react";
 
 export default function ScrollToTop() {
@@ -64,8 +68,7 @@ export default function ScrollToTop() {
 
         >
 
-            <i className="fa-solid fa-arrow-up"></i>
-
+            <FaArrowUp />
         </button>
 
     );

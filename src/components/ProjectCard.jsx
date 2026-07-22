@@ -12,6 +12,9 @@ export default function ProjectCard({
             <img
                 src={project.cardImage}
                 alt={project.title}
+                width="500"
+
+                height="350"
                 loading="lazy"
             />
 

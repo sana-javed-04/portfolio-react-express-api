@@ -1,13 +1,40 @@
-// Vercel par relative path chal jata hai, isliye local domain ki zaroorat nahi hai
+
+// const API_URL = "/api/portfolio-data";
+
+// // Sab se pehle aik helper function banayein jo poora data ek sath fetch karega
+// async function fetchAllData() {
+//     const res = await fetch(API_URL);
+//     if (!res.ok) {
+//         throw new Error("Failed to load portfolio data from backend");
+//     }
+//     return await res.json();
+// }
+
+
 const API_URL = "/api/portfolio-data";
 
-// Sab se pehle aik helper function banayein jo poora data ek sath fetch karega
+let portfolioData = null;
+
 async function fetchAllData() {
-    const res = await fetch(API_URL);
-    if (!res.ok) {
-        throw new Error("Failed to load portfolio data from backend");
+
+    if (portfolioData) {
+
+        return portfolioData;
+
     }
-    return await res.json();
+
+    const res = await fetch(API_URL);
+
+    if (!res.ok) {
+
+        throw new Error("Failed to load portfolio data");
+
+    }
+
+    portfolioData = await res.json();
+
+    return portfolioData;
+
 }
 
 // ================= Profile =================

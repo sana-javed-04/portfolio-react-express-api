@@ -1,3 +1,11 @@
+import {
+    FaGithub,
+    FaLinkedin,
+    FaEnvelope,
+    FaPhoneAlt,
+    FaMapMarkerAlt
+} from "react-icons/fa";
+
 import { useEffect, useState } from "react";
 import { getContact } from "../api/portfolioApi";
 
@@ -272,8 +280,7 @@ export default function Contact() {
 
                         <div className="contact-item">
 
-                            <i className="fa-solid fa-envelope"></i>
-
+                            <FaEnvelope />
                             <span>
 
                                 {contact.email}
@@ -284,8 +291,7 @@ export default function Contact() {
 
                         <div className="contact-item">
 
-                            <i className="fa-solid fa-phone"></i>
-
+                            <FaPhoneAlt />
                             <span>
 
                                 {contact.phone}
@@ -296,8 +302,7 @@ export default function Contact() {
 
                         <div className="contact-item">
 
-                            <i className="fa-solid fa-location-dot"></i>
-
+                            <FaMapMarkerAlt />
                             <span>
 
                                 {contact.location}
@@ -314,8 +319,7 @@ export default function Contact() {
                                 rel="noreferrer"
                             >
 
-                                <i className="fa-brands fa-github"></i>
-
+                                <FaGithub />
                             </a>
 
                             <a
@@ -324,8 +328,7 @@ export default function Contact() {
                                 rel="noreferrer"
                             >
 
-                                <i className="fa-brands fa-linkedin"></i>
-
+                                <FaLinkedin />
                             </a>
 
                             <a

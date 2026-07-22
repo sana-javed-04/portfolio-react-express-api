@@ -1,3 +1,8 @@
+import {
+    FaGithub,
+    FaLinkedin
+} from "react-icons/fa";
+
 import { useEffect, useState } from "react";
 
 import { getFooter } from "../api/portfolioApi";
@@ -48,8 +53,7 @@ export default function Footer() {
                         rel="noreferrer"
                     >
 
-                        <i className="fa-brands fa-github"></i>
-
+                        <FaGithub />
                     </a>
 
                     <a
@@ -58,8 +62,7 @@ export default function Footer() {
                         rel="noreferrer"
                     >
 
-                        <i className="fa-brands fa-linkedin"></i>
-
+                        <FaLinkedin />
                     </a>
 
                     <a

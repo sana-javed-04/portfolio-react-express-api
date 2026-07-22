@@ -44,6 +44,9 @@ export default function MiniProjectModal({
                                 key={index}
                                 src={image}
                                 alt={project.title}
+                                width="500"
+
+                                height="350"
                                 loading="lazy"
                             />
 

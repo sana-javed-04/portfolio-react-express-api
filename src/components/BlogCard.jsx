@@ -12,6 +12,9 @@ export default function BlogCard({
             <img
                 src={blog.cardImage}
                 alt={blog.title}
+                width="500"
+
+                height="350"
                 loading="lazy"
             />
 

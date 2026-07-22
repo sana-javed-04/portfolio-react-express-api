@@ -30,6 +30,9 @@ export default function BlogModal({
                     src={blog.modalImage}
                     alt={blog.title}
                     className="blog-modal-image"
+                    width="500"
+
+                    height="350"
                     loading="lazy"
                 />
 

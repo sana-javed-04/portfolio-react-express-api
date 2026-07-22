@@ -84,6 +84,9 @@ export default function Certificates() {
                                 src={certificate.image}
 
                                 alt="Certificate"
+                                width="500"
+
+                                height="350"
 
                                 loading="lazy"
 
@@ -119,6 +122,9 @@ export default function Certificates() {
                         <img
 
                             src={selectedImage}
+                            width="500"
+
+                            height="350"
 
                             alt="Certificate"
 

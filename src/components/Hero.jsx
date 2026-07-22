@@ -122,9 +122,14 @@ function Hero() {
                     <div className="profile-card">
 
                         <img
-                            src="/images/hero.jpeg"
+                            src="/images/hero.webp"
                             alt="Sana Javed"
                             className="profile-image"
+                            width="500"
+                            height="350"
+                            loading="eager"
+                            fetchPriority="high"
+                            decoding="async"
                         />
 
                     </div>

@@ -1,3 +1,7 @@
+import {
+    FaChevronDown
+} from "react-icons/fa";
+
 import { useState, useRef, useEffect } from "react";
 
 export default function CustomDropdown({
@@ -58,8 +62,7 @@ export default function CustomDropdown({
 
                 {value === "All" ? label : value}
 
-                <i className="fa-solid fa-chevron-down"></i>
-
+                <FaChevronDown />
             </button>
 
             {
