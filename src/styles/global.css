@@ -179,12 +179,18 @@ textarea {
 
     font-weight: 600;
 
-    transition: .3s;
+    transition: .3s ease;
 
     cursor: pointer;
 
 }
+.btn:hover{
 
+transform:translateY(-4px) scale(1.02);
+
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
 .primary-btn {
 
     background: var(--gold);
