@@ -267,8 +267,6 @@ textarea {
     left: 0;
 
     width: 100%;
-    overflow: hidden;
-
     z-index: 999;
 
     background: var(--section);
@@ -2274,7 +2272,6 @@ textarea {
     /* Cards */
 
     .skill-card,
-    .project-card,
     .mini-card,
     .blog-card,
     .testimonial-card,
