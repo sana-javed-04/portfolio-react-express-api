@@ -184,40 +184,41 @@ export default function Projects() {
                 </h2>
 
                 <div className="project-filters">
+                    <div className="serdiv">
+                        <input
+                            type="text"
+                            className="search-input"
+                            placeholder="Search Project..."
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                        />
+                    </div>
+                    <div className="catdiv">
+                        <CustomDropdown
 
-                    <input
-                        type="text"
-                        className="search-input"
-                        placeholder="Search Project..."
-                        value={search}
-                        onChange={(e) => setSearch(e.target.value)}
-                    />
+                            label="Category"
 
-                    <CustomDropdown
+                            options={categories}
 
-                        label="Category"
+                            value={category}
 
-                        options={categories}
+                            onChange={setCategory}
 
-                        value={category}
+                        />
 
-                        onChange={setCategory}
+                        <CustomDropdown
 
-                    />
+                            label="Technology"
 
-                    <CustomDropdown
+                            options={technologies}
 
-                        label="Technology"
+                            value={technology}
 
-                        options={technologies}
+                            onChange={setTechnology}
 
-                        value={technology}
+                        />
 
-                        onChange={setTechnology}
-
-                    />
-
-
+                    </div>
                 </div>
 
                 {
