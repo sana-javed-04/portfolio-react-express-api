@@ -32,7 +32,25 @@ export default function Certificates() {
         loadCertificates();
 
     }, []);
+    useEffect(() => {
 
+        function handleEsc(e) {
+
+            if (e.key === "Escape") {
+
+                setSelectedImage(null);
+
+            }
+
+        }
+
+        window.addEventListener("keydown", handleEsc);
+
+        return () =>
+
+            window.removeEventListener("keydown", handleEsc);
+
+    }, []);
     if (loading) {
 
         return (
@@ -118,6 +136,19 @@ export default function Certificates() {
 
                         }
                     >
+                        <button
+
+                            className="close-modal"
+
+                            onClick={() => setSelectedImage(null)}
+
+                            aria-label="Close Certificate"
+
+                        >
+
+                            ✕
+
+                        </button>
 
                         <img
 

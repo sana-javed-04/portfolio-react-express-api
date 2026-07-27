@@ -120,11 +120,11 @@ export default function Services() {
 
                 </h2>
 
-                <p className="section-subtitle">
+                {/* <p className="section-subtitle">
 
                     Professional web development services focused on building modern, responsive, and high-performance digital experiences.
 
-                </p>
+                </p> */}
 
                 <div className="services-grid">
 

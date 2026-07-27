@@ -710,6 +710,77 @@ box-shadow:0 15px 35px rgba(0,0,0,.18);
     color: var(--muted);
 }
 
+/* Certificate section */
+
+.certificate-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.85);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+
+    padding: 20px;
+
+}
+
+.certificate-modal img {
+
+    max-width: 90%;
+
+    max-height: 90vh;
+
+    border-radius: 12px;
+
+    border: 3px solid var(--gold);
+
+    background: #fff;
+
+}
+
+.close-modal {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    color: #000;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.close-modal:hover {
+
+    transform: rotate(90deg) scale(1.08);
+
+}
 /* =====================================================
    SKILLS SECTION
 ===================================================== */

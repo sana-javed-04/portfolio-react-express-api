@@ -65,9 +65,6 @@ export default function ProjectModal({
                 <img
                     src={project.modalImage}
                     alt={project.title}
-                    width="500"
-
-                    height="350"
                     loading="lazy"
                 />
 
