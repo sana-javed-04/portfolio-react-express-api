@@ -710,83 +710,6 @@ box-shadow:0 15px 35px rgba(0,0,0,.18);
     color: var(--muted);
 }
 
-/* Certificate section */
-
-.certificate-modal {
-
-    position: fixed;
-
-    inset: 0;
-
-    background: rgba(0,0,0,.85);
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    z-index: 9999;
-
-    padding: 20px;
-
-}
-
-.certificate-modal img {
-
-    max-width: 90%;
-
-    max-height: 90vh;
-
-    border-radius: 12px;
-
-    border: 3px solid var(--gold);
-
-}
-
-.certificate-close-btn {
-
-    position: fixed;
-
-    top: 25px;
-
-    right: 25px;
-
-    width: 42px;
-
-    height: 42px;
-
-    border: none;
-
-    border-radius: 50%;
-
-    background: var(--gold);
-
-    color: #000;
-
-    font-size: 22px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    transition: .3s;
-
-    z-index: 10000;
-
-}
-
-.certificate-close-btn:hover {
-
-    transform: scale(1.1);
-
-}
 /* =====================================================
    SKILLS SECTION
 ===================================================== */
@@ -1778,6 +1701,16 @@ box-shadow:0 15px 35px rgba(0,0,0,.18);
     max-width: 850px;
 }
 
+/* certificate modal contant */
+
+.certificate-modal-content {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
 /* Project Modal Margin */
 
 .project-modal-content {
@@ -1825,7 +1758,8 @@ box-shadow:0 15px 35px rgba(0,0,0,.18);
 
 .close-modal,
 .close-blog,
-.close-mini {
+.close-mini,
+.close-certificate {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -1838,7 +1772,8 @@ box-shadow:0 15px 35px rgba(0,0,0,.18);
 
 .close-modal:hover,
 .close-blog:hover,
-.close-mini:hover {
+.close-mini:hover,
+.close-certificate:hover {
     color: var(--gold);
     transform: rotate(90deg);
 }
@@ -2319,6 +2254,7 @@ box-shadow:0 15px 35px rgba(0,0,0,.18);
     }
 
 }
+
 
 @media(max-width:992px){
 

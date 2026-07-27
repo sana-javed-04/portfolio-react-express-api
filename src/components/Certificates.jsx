@@ -136,35 +136,33 @@ export default function Certificates() {
 
                         }
                     >
-                        <button
-
-                            className="certificate-close-btn"
-
-                            onClick={() => setSelectedImage(null)}
-
-                            aria-label="Close Certificate"
-
+                        <div
+                            className="certificate-modal-content"
+                            onClick={(e) => e.stopPropagation()}
                         >
 
-                            ✕
+                            <span
+                                className="close-certificate"
+                                onClick={() => setSelectedImage(null)}
+                            >
+                                &times;
+                            </span>
 
-                        </button>
+                            <img
 
-                        <img
+                                src={selectedImage}
+                                width="500"
 
-                            src={selectedImage}
-                            width="500"
+                                height="350"
 
-                            height="350"
+                                alt="Certificate"
 
-                            alt="Certificate"
+                            />
 
-                        />
+                        </div>
 
                     </div>
-
                 )
-
             }
 
         </section>
