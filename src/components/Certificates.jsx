@@ -138,7 +138,7 @@ export default function Certificates() {
                     >
                         <button
 
-                            className="close-modal"
+                            className="certificate-close-btn"
 
                             onClick={() => setSelectedImage(null)}
 
