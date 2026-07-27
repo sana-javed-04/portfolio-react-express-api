@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Services from "./components/Services";
 import Projects from "./components/Projects";
 import MiniProjects from "./components/MiniProjects";
 import Certificates from "./components/Certificates";
@@ -70,6 +71,7 @@ function App() {
         <Certificates />
 
         <Skills />
+        <Services />
 
         <Projects />
 

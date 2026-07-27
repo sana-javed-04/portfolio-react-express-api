@@ -150,6 +150,16 @@ function Navbar() {
                         <li>
                             <a
                                 onClick={() => setMenuOpen(false)}
+                                href="#services"
+                                className={active === "services" ? "nav-link active" : "nav-link"}
+                            >
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                onClick={() => setMenuOpen(false)}
                                 href="#projects"
                                 className={active === "projects" ? "nav-link active" : "nav-link"}
                             >

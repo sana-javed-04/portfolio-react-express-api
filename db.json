@@ -57,6 +57,44 @@
             "level": "Intermediate"
         }
     ],
+    "services": [
+        {
+            "id": 1,
+            "icon": "code",
+            "title": "Frontend Development",
+            "description": "Building modern, responsive and high-performance websites using HTML, CSS, JavaScript and React.js."
+        },
+        {
+            "id": 2,
+            "icon": "wordpress",
+            "title": "WordPress Development",
+            "description": "Creating professional WordPress business websites, landing pages and Elementor-based solutions."
+        },
+        {
+            "id": 3,
+            "icon": "palette",
+            "title": "Responsive UI/UX Design",
+            "description": "Designing clean, attractive and user-friendly interfaces with responsive layouts for every device."
+        },
+        {
+            "id": 4,
+            "icon": "server",
+            "title": "API Integration",
+            "description": "Integrating REST APIs into React applications to build dynamic and interactive web experiences."
+        },
+        {
+            "id": 5,
+            "icon": "bolt",
+            "title": "Website Optimization",
+            "description": "Improving website speed, SEO, accessibility and overall performance for better user experience."
+        },
+        {
+            "id": 6,
+            "icon": "mobile",
+            "title": "Flutter App Development",
+            "description": "Developing beginner-friendly Flutter applications with responsive layouts and clean user interfaces."
+        }
+    ],
     "projects": [
         {
             "id": 1,
